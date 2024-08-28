@@ -1,0 +1,79 @@
+
+local_lr: 0.03
+local_epoch: 3
+momentum: 0.5
+train_batch_size: 64
+test_batch_size: 512
+
+decay_cofficient: 0.99
+decay_gap: 5
+
+model: 'resnet'
+
+dataset: 'cifar100'
+
+unbalance: 0.98
+
+
+
+split_type: 'independent'
+
+alpha: 0.5
+
+client_num: 10
+
+train_test_ratio: 0.833 
+
+
+sampling_ratio: 0.3
+rounds: 600
+
+agg: 'datasize' 
+
+
+test_gap: 5
+loglevel: 'TRACE'
+
+
+result_dir: "./out/sketch/e14" 
+
+
+
+rand_seed: 42
+
+algorithm: 'streamfedavg'
+
+
+seq_num: 1
+
+
+data_inc_ratio: 0.01
+
+data_init_ratio: 0.3 # 0.005
+
+data_inc_num: 5
+
+data_inc_gap: 1
+
+
+limit: false
+
+resort: false
+
+
+capacity: 100
+
+sample: counter
+
+counter_type: array
+
+
+
+show_args: [algorithm,sample,unbalance,counter_type]
+
+
+mu: 0.3
+
+
+
+
